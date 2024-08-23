@@ -1,1 +1,136 @@
+.benefits {
+    // padding-top: 60px;
+    // padding-bottom: 50px;
+    background: linear-gradient(169deg, #FF7E62 0.06%, #FFF373 99.94%);
+}
 
+.benefits-box {
+    @include on-desktop {
+        
+    }
+}
+.benefits-content{
+    @include on-desktop {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+.benefits-header {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: $_black_color;
+    justify-content: center;
+    margin-bottom: 41px;
+        @include on-desktop {
+            gap: 12px;
+            margin-bottom: 54px;
+        }
+    .benefits-svg-ladder {
+        width: 25px;
+        height: 29px;
+            @include on-desktop {
+                width: 46px;
+                height: 55px;
+            }
+    }
+    h5 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+            @include on-desktop {
+                font-size: 36px;
+            }
+    }
+}
+
+.benefits-svg-star {
+    width: 59px;
+    height: 55px;
+}
+
+.benefits-svg-eye {
+    width: 64px;
+    height: 47px;
+}
+
+.benefits-svg-download {
+    width: 43px;
+    height: 43px;
+}
+
+.benefits-svg-offline {
+    width: 61px;
+    height: 51px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include on-desktop {
+        flex-direction: row;
+                gap: 200px;
+    }
+}
+
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    margin-top: 60px;
+
+    &:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 120px; 
+            background-color:$_black_color;
+        }
+
+    @include on-desktop {
+        margin-top: 0;
+    &:not(:last-child)::after {
+        content: '';
+            position: absolute;
+            top: 50%; 
+            right: -100px; 
+            left: unset;
+            bottom: unset;
+            transform: translateY(-50%);
+            height: 120px; 
+            width: 3px; 
+            background-color: $_black_color;
+        }
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-list-numbers {
+        font-size: 32px;
+        font-weight: 600;
+        color: $_black_color;
+        line-height: 1.5;
+    }
+
+    .header-list-text {
+        color: #404040;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+}
