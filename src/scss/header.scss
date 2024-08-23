@@ -1,0 +1,109 @@
+.header {
+  background-color: $_blue_color;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $_padding_mobile;
+  max-width: $mobile;
+  margin: 0 auto;
+
+  @include on-desktop {
+    padding: 0 84px;
+    max-width: $desktop;
+  }
+}
+
+.header-logo {
+  display: flex;
+  padding: 8px 0;
+  gap: 14px;
+  align-items: center;
+
+  @include on-desktop {
+    gap: 22px;
+    padding: 9px 0;
+  }
+}
+
+.header-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #183059;
+
+  @include on-desktop {
+    width: 57px;
+    height: 57px;
+    border-radius: 14px;
+  }
+}
+
+.header-logo-text {
+  color: $_main_bg_color;
+  font-weight: 300;
+
+  @include on-desktop {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+
+.header-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+
+  @include on-desktop {
+    display: none;
+  }
+}
+
+.header-icon {
+  width: 30px;
+  height: 3px;
+  fill: $_main_bg_color;
+}
+
+.header-nav {
+  display: none;
+
+  @include on-desktop {
+    display: flex;
+  }
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.header-item {
+  position: relative;
+  display: inline-block;
+  padding: 24px 0;
+  color: $_main_bg_color;
+  font-size: 18px;
+  line-height: 27px;
+
+  &:not(:last-child) {
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -38px;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: $_main_bg_color;
+      border-radius: 50%;
+    }
+  }
+}
