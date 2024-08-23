@@ -13,6 +13,11 @@ html {
 
 body {
   margin: 0;
+  padding-top: 56px;
+
+  @include on-desktop {
+    padding-top: 75px;
+  }
 }
 
 h1,

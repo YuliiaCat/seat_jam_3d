@@ -1,5 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: $_blue_color;
+  z-index: 700;
 }
 
 .header-box {
@@ -91,6 +96,7 @@
   display: inline-block;
   color: $_main_bg_color;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:not(:last-child) {
     &::after {
@@ -104,10 +110,23 @@
       border-radius: 50%;
     }
   }
+
+  &:hover{
+    color: #B2FFE3;
+  }
+
+  &.active {
+    color: #ECFF1A;
+  }
 }
 
 .header-link {
   font-size: 18px;
   line-height: 27px;
   padding: 24px 0;
+
+
+  &:focus-within {
+    color: #ECFF1A;
+  }
 }
