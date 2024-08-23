@@ -1,5 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
   background-color: $_blue_color;
+  z-index: 700;
 }
 
 .header-box {
@@ -91,6 +97,7 @@
   display: inline-block;
   color: $_main_bg_color;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:not(:last-child) {
     &::after {
@@ -103,6 +110,14 @@
       background-color: $_main_bg_color;
       border-radius: 50%;
     }
+  }
+
+  &:focus-within {
+    color: #ECFF1A;
+  }
+
+  &:hover{
+    color: #B2FFE3;
   }
 }
 
