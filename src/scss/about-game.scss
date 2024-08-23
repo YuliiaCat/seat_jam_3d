@@ -1,1 +1,44 @@
+.about-game-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.about-game-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #183059;
+    @include on-desktop {
+        gap: 12px;
+        margin-bottom: 50px;
+        svg{
+            width: 46px;
+            height: 55px;
+        }
+        h2{
+            font-size: 36px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    svg {
+        width: 25px;
+        height: 30px;
+    }
+}
+
+.about-game-text {
+    color: #183059;
+    font-size: 14px;
+    text-align: center;
+    @include on-desktop{
+            font-size: 18px;
+            max-width: 749px;
+    }
+}
