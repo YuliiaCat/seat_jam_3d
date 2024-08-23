@@ -1,15 +1,15 @@
 .benefits {
-    // padding-top: 60px;
-    // padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     background: linear-gradient(169deg, #FF7E62 0.06%, #FFF373 99.94%);
-}
 
-.benefits-box {
     @include on-desktop {
-        
+        padding-top: 102px;
+        padding-bottom: 160px;
     }
 }
-.benefits-content{
+
+.benefits-content {
     @include on-desktop {
         display: flex;
         justify-content: center;
@@ -25,25 +25,30 @@
     color: $_black_color;
     justify-content: center;
     margin-bottom: 41px;
-        @include on-desktop {
-            gap: 12px;
-            margin-bottom: 54px;
-        }
+
+    @include on-desktop {
+        gap: 12px;
+        margin-bottom: 54px;
+    }
+
     .benefits-svg-ladder {
         width: 25px;
         height: 29px;
-            @include on-desktop {
-                width: 46px;
-                height: 55px;
-            }
+
+        @include on-desktop {
+            width: 46px;
+            height: 55px;
+        }
     }
-    h5 {
+
+    h2 {
         font-size: 24px;
         font-weight: 400;
         line-height: 1.5;
-            @include on-desktop {
-                font-size: 36px;
-            }
+
+        @include on-desktop {
+            font-size: 36px;
+        }
     }
 }
 
@@ -75,7 +80,7 @@
 
     @include on-desktop {
         flex-direction: row;
-                gap: 200px;
+        gap: 200px;
     }
 }
 
@@ -88,31 +93,33 @@
     margin-top: 60px;
 
     &:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 3px;
-            width: 120px; 
-            background-color:$_black_color;
-        }
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 120px;
+        background-color: $_black_color;
+    }
 
     @include on-desktop {
         margin-top: 0;
-    &:not(:last-child)::after {
-        content: '';
+
+        &:not(:last-child)::after {
+            content: '';
             position: absolute;
-            top: 50%; 
-            right: -100px; 
+            top: 50%;
+            right: -100px;
             left: unset;
             bottom: unset;
             transform: translateY(-50%);
-            height: 120px; 
-            width: 3px; 
+            height: 120px;
+            width: 3px;
             background-color: $_black_color;
         }
     }
+
     div {
         display: flex;
         flex-direction: column;
