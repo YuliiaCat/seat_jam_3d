@@ -13,9 +13,11 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
+      outDir: '../dist',
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          main: 'src/index.html',
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -25,7 +27,6 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
     },
     plugins: [
       injectHTML(),
@@ -53,6 +54,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/vanilla-vite-template'
+    base: '/seat_jam_3d/'
   };
 });
