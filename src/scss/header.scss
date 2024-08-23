@@ -89,10 +89,8 @@
 .header-item {
   position: relative;
   display: inline-block;
-  padding: 24px 0;
   color: $_main_bg_color;
-  font-size: 18px;
-  line-height: 27px;
+  cursor: pointer;
 
   &:not(:last-child) {
     &::after {
@@ -106,4 +104,10 @@
       border-radius: 50%;
     }
   }
+}
+
+.header-link {
+  font-size: 18px;
+  line-height: 27px;
+  padding: 24px 0;
 }
