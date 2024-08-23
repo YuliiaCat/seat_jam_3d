@@ -13,7 +13,8 @@
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" crossorigin src="/seat_jam_3d/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/seat_jam_3d/assets/index-3e203c1c.css">
+    <link rel="modulepreload" crossorigin href="/seat_jam_3d/assets/vendor-5d0fd50e.js">
+    <link rel="stylesheet" href="/seat_jam_3d/assets/index-16ef3b60.css">
   </head>
   <body>
     <header class="header">
@@ -164,9 +165,92 @@
   </div>
 </section>
 
-      <section id="gallery" class="section">
-  <div class="container">
-
+      <section id="gallery" class="gallery-section section">
+  <div class="gallery-container">
+    <div class="gallery-title-box">
+      <svg class="gallery-icon">
+        <use href="/seat_jam_3d/assets/sprite-0203df49.svg#icon-ladder-blue"></use>
+      </svg>
+      <h2 class="gallery-title">Gallery</h2>
+    </div>
+    <div class="swiper gallery-swiper">
+      <ul class="gallery-list swiper-wrapper">
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/1slide-1x-cea225eb.png 1x, /seat_jam_3d/assets/1slide-2x-8b7403ca.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/1slide-1x-cea225eb.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/2slide-1x-094a5332.png 1x, /seat_jam_3d/assets/2slide-2x-942653fb.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/2slide-1x-094a5332.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/3slide-1x-a051909e.png 1x, /seat_jam_3d/assets/3slide-2x-485d13a7.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/3slide-1x-a051909e.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/4slide-1x-d936b2bf.png 1x, /seat_jam_3d/assets/4slide-2x-6c6c9956.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/4slide-1x-d936b2bf.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/5slide-1x-0b744d0b.png 1x, /seat_jam_3d/assets/5slide-2x-4cafb74a.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/5slide-1x-0b744d0b.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/6slide-1x-ef5d7a3b.png 1x, /seat_jam_3d/assets/6slide-2x-15218d21.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/6slide-1x-ef5d7a3b.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/7slide-1x-7fa1e029.png 1x, /seat_jam_3d/assets/7slide-2x-adcba64c.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/7slide-1x-7fa1e029.png" alt="Slide picture">
+          </picture>
+        </li>
+        <li class="gallery-item swiper-slide">
+          <picture class="gallery-picture">
+            <source
+              srcset="/seat_jam_3d/assets/8slide-1x-8c8134f5.png 1x, /seat_jam_3d/assets/8slide-2x-0d5dda50.png 2x"
+            />
+            <img class="swiper-img" src="/seat_jam_3d/assets/8slide-1x-8c8134f5.png" alt="Slide picture">
+          </picture>
+        </li>
+      </ul>
+      <button class="gallery-button-prev" tabindex="0">
+        <svg class="gallery-icon-arrow">
+          <use href="/seat_jam_3d/assets/sprite-0203df49.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="gallery-button-next" tabindex="0">
+        <svg class="gallery-icon-arrow">
+          <use href="/seat_jam_3d/assets/sprite-0203df49.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
