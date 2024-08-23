@@ -47,22 +47,31 @@
 }
 
 .swiper {
-  width: 100%;
-  position: relative;
+  overflow: hidden;
+  padding: 0 30px;
+  max-width: 288px;
+
+  @include on-desktop {
+    position: relative;
+    max-width: 1062px;
+  }
 }
 
 .swiper .gallery-list {
   display: flex;
-  gap: 24px;
+}
+
+.swiper .swiper-slide {
+  width: 230px;
 }
 
 .swiper .gallery-item {
-  width: 228px;
+  width: 230px;
 }
 
 .gallery-picture {
   display: block;
-  width: 228px;
+  width: 230px;
 }
 
 .gallery-button-prev,
@@ -84,19 +93,19 @@
 }
 
 .gallery-button-prev {
-  left: -10px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .gallery-button-next {
-  right: -10px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .gallery-icon-arrow {
   width: 24px;
-  height: 24px;
+  height: 26px;
   stroke: $_main_bg_color;
 }
