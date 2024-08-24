@@ -15,9 +15,7 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
       outDir: '../dist',
       rollupOptions: {
-        input: {
-          main: 'src/index.html',
-        },
+        input: glob.sync('./src/*.html'),
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -54,6 +52,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/seat_jam_3d/'
+    base: '/seat_jam_3d'
   };
 });
