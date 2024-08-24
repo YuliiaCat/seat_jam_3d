@@ -10,17 +10,6 @@
     align-items: center;
     margin-bottom: 40px;
     color: #183059;
-    @include on-desktop {
-        gap: 12px;
-        margin-bottom: 50px;
-        svg{
-            width: 46px;
-            height: 55px;
-        }
-        h2{
-            font-size: 36px;
-        }
-    }
 
     h2 {
         font-size: 24px;
@@ -31,14 +20,30 @@
         width: 25px;
         height: 30px;
     }
+
+    @include on-desktop {
+        gap: 12px;
+        margin-bottom: 50px;
+
+        svg {
+            width: 46px;
+            height: 55px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+    }
+
 }
 
 .about-game-text {
     color: #183059;
     font-size: 14px;
     text-align: center;
-    @include on-desktop{
-            font-size: 18px;
-            max-width: 749px;
+
+    @include on-desktop {
+        font-size: 18px;
+        max-width: 749px;
     }
 }
