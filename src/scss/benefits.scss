@@ -4,6 +4,7 @@
     background: linear-gradient(169deg, #FF7E62 0.06%, #FFF373 99.94%);
 
     @include on-desktop {
+        background: linear-gradient(97deg, #FF7E62 0.08%, #FFF373 99.92%);
         padding-top: 102px;
         padding-bottom: 160px;
     }
