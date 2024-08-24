@@ -1,6 +1,13 @@
-const btn = document.querySelector('.header-burger');
-const menu = document.querySelector('.menu');
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.header-burger');
+  const menu = document.querySelector('.menu');
 
-btn.addEventListener('click', () => {
-  menu.classList.toggle('open');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      console.log('Button clicked');
+      menu.classList.toggle('open');
+    });
+  } else {
+    console.error('Button or menu not found');
+  }
 });
