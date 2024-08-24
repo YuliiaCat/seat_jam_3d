@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btn && menu) {
     btn.addEventListener('click', () => {
-      console.log('Button clicked');
       menu.classList.toggle('open');
     });
   } else {
