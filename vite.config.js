@@ -52,6 +52,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/seat_jam_3d/'
+    base: '/seat_jam_3d'
   };
 });
