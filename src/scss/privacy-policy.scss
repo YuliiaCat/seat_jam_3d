@@ -1,3 +1,70 @@
-.title {
-  color: red;
+.pages-container {
+  padding: 50px 20px 100px 20px;
+
+  @include on-desktop {
+    padding: 102px 0;
+  }
+}
+
+.pages-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+
+  @include on-desktop {
+    gap: 106px;
+  }
+}
+
+.pages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #183059;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  @include on-desktop {
+    gap: 12px;
+    margin-bottom: 50px;
+    align-items: center;
+
+    svg {
+      width: 46px;
+      height: 55px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+}
+
+.pages-text {
+  color: #183059;
+  font-size: 14px;
+  text-align: start;
+
+  @include on-desktop {
+    font-size: 18px;
+    max-width: 782px;
+  }
 }
