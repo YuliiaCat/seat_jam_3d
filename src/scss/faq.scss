@@ -1,10 +1,11 @@
-.faq-container{
-        @include on-desktop {
-display: flex;
-flex-direction: column;
-align-items: center;
-        }
+.faq-container {
+    @include on-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 .faq-title-box {
     display: flex;
     align-items: center;
@@ -25,13 +26,14 @@ align-items: center;
     }
 
     @include on-desktop {
-       .faq-title{
-        font-size: 36px;
-       }
-           .faq-icon{
+        .faq-title {
+            font-size: 36px;
+        }
+
+        .faq-icon {
             width: 46px;
             height: 55px;
-           }
+        }
     }
 }
 
@@ -40,10 +42,10 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     margin: 0 4px;
-        @include on-desktop {
-            max-width: 840px;
-            // padding: 0 80px;
-            }
+
+    @include on-desktop {
+        max-width: 840px;
+    }
 
     .faq-item {
         display: flex;
@@ -51,10 +53,12 @@ align-items: center;
         width: 100%;
         margin: 20px 0;
         position: relative;
-        padding: 0 80px;
-            @include on-desktop {
-                    margin: 26px 0;
-                }
+
+        @include on-desktop {
+            margin: 26px 0;
+            padding: 0 80px;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -65,7 +69,7 @@ align-items: center;
             height: 1px;
             background-color: #183059;
 
-            
+
         }
 
         &:first-child::before {
@@ -94,6 +98,7 @@ align-items: center;
                 .faq-question-minus {
                     width: 12px;
                     height: 12px;
+
                     @include on-desktop {
                         width: 20px;
                         height: 20px;
@@ -106,6 +111,7 @@ align-items: center;
                 font-size: 14px;
                 line-height: 1.5;
                 color: #183059;
+
                 @include on-desktop {
                     font-size: 24px;
                 }
@@ -132,16 +138,16 @@ align-items: center;
                 color: #1157A6;
                 font-size: 14px;
                 line-height: 1.5;
+
                 @include on-desktop {
-                            font-size: 20px;
-                        }
+                    font-size: 20px;
+                }
             }
-                        
+
         }
 
         &.opened .faq-answer {
             height: auto;
-            /* Відображення відповіді */
         }
 
         &.opened .faq-question-plus-btn {
